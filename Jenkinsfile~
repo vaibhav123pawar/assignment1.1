@@ -10,11 +10,11 @@ git 'https://github.com/BitwiseInc/assignment1.1.git'
 stage 'build_AssignmentProject'
 node{
   if(isUnix()){
-  sh './gradlew build --info'
+  sh 'gradle build --info'
     
   }
   else{
-    bat './gradlew build --info'
+    bat 'gradle build --info'
   }
 }
 
