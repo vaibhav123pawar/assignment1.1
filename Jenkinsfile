@@ -9,7 +9,7 @@ git 'https://github.com/BitwiseInc/assignment1.1.git'
 //2
 stage 'build_AssignmentProject'
 node{
-  sh 'sudo ./gradlew build --info' 
+  sudo sh './gradlew build --info' 
 }
 
 //3
