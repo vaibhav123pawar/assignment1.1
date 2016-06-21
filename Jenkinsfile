@@ -9,13 +9,7 @@ git 'https://github.com/BitwiseInc/assignment1.1.git'
 //2
 stage 'build_AssignmentProject'
 node{
-  if(isUnix()){
   sudo ./gradlew build --info 
-    
-  }
-  else{
-    bat './gradlew build --info'
-  }
 }
 
 //3
