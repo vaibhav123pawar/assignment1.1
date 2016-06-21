@@ -19,34 +19,34 @@ node{
 }
 
 //3
-stage 'Publish-Artifact'
-node{
-   if(isUnix()){
-    sh 'gradle publish --info'
-  }
-  else{
-   bat 'gradle publish --info'
-}
-}
+//stage 'Publish-Artifact'
+//node{
+//   if(isUnix()){
+//    sh 'gradle publish --info'
+//  }
+ // else{
+//   bat 'gradle publish --info'
+//}
+//}
 //4
-stage 'Sonar-report'
-node{
-     if(isUnix()){
-          sh 'gradle sonarqube --info'
-     }else{
-          bat 'gradle sonarqube --info'
-     }
-}
+//stage 'Sonar-report'
+//node{
+//     if(isUnix()){
+  //        sh 'gradle sonarqube --info'
+    // }else{
+      //    bat 'gradle sonarqube --info'
+     //}
+//}
 
 //5
-stage 'JaCoCo-Coverage-report'
-node{
-     if(isUnix()){
-          sh 'gradle jacoco --info'
-     }else{
-          bat 'gradle jacoco --info'
-     }
-}
+//stage 'JaCoCo-Coverage-report'
+//node{
+//     if(isUnix()){
+          //sh 'gradle jacoco --info'
+     //}else{
+       //   bat 'gradle jacoco --info'
+     //}
+//}
 
 //8
 //stage 'send-mail'
