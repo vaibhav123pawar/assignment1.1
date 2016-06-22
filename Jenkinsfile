@@ -3,7 +3,7 @@
 //1
 stage 'clone_AssignmentProject'
 node {
-git 'https://github.com/BitwiseInc/assignment1.1.git'
+git 'https://github.com/vaibhav123pawar/assignment1.1.git'
 }
 
 //2
