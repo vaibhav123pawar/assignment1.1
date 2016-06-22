@@ -37,9 +37,18 @@ public class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         //when
         app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
+        app.updateQuality();
         //then
-        assertEquals(1, app.items[0].sellIn);
-        assertEquals(1, app.items[0].quality);
+        assertEquals(-8, app.items[0].sellIn);
+        assertEquals(10, app.items[0].quality);
 
     }
 
