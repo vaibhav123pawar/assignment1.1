@@ -1,3 +1,5 @@
+package com.gildedrose;
+
 import com.gildedrose.GildedRose;
 import com.gildedrose.Item;
 import org.junit.Test;
